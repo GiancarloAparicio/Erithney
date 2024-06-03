@@ -6,7 +6,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
 	lang: 'es-es',
 	title: 'Erithney Blog',
-	description: 'My first Site',
+	description: 'Nuestro sitio web',
 	base: '/Erithney/',
 
 	theme: defaultTheme({
