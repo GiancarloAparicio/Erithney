@@ -1,0 +1,11 @@
+version: '3'
+services:
+  vuejs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: erithney-blog
+    volumes:
+      - ./docs:/usr/src/app/docs

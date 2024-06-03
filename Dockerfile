@@ -1,25 +1,23 @@
-FROM node:19-alpine
+# Use the official lightweight Node.js 14 image
+FROM node:20-slim
 
-# Instalar Chromium y certificados
-RUN apk add --no-cache \
-    chromium \
-    ca-certificates
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
-# Configuración de Puppeteer
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-ENV SCULLY_PUPPETEER_EXECUTABLE_PATH '/usr/bin/chromium-browser'
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
 
-# Instalar Angular CLI de forma global
-RUN npm install -g @angular/cli
+# Install dependencies
+RUN npm install
 
-# Crear un nuevo proyecto Angular llamado "Erithney" con enrutamiento y estilo SCSS
-RUN ng new Erithney --routing --style=scss
+# Copy all local files to the working directory
+COPY . .
 
-# Establecer el directorio de trabajo
-WORKDIR /Erithney
+# Build the Vue.js app
+RUN npm run build
 
-# Exponer el puerto 4200 para que Angular sirva la aplicación
-EXPOSE 4200
+# Expose port 8080
+EXPOSE 8080
 
-# Ejecutar ng serve al iniciar el contenedor
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# Command to run the Vue.js app
+CMD ["npm", "run", "serve"]
