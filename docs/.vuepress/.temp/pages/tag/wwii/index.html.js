@@ -1,5 +1,5 @@
 import comp from "/usr/src/app/docs/.vuepress/.temp/pages/tag/wwii/index.html.vue"
-const data = JSON.parse("{\"path\":\"/tag/wwii/\",\"title\":\"Tag WWII\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Tag WWII\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"WWII\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
+const data = JSON.parse("{\"path\":\"/tag/wwii/\",\"title\":\"Tag WWII\",\"lang\":\"es-es\",\"frontmatter\":{\"title\":\"Tag WWII\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"WWII\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
