@@ -1,18 +1,16 @@
 ---
-date: 1998-01-01
+date: 06-03-2024
 category:
-  - History
+  - Experiencias
 tag:
-  - WWI
+  - Parque de la amistad
+  - Surco
+  - Mesiversario
 archive: true
 ---
 
-# Archive Article1
+# 1. Mesiversario
 
-## Heading 2
-
-Here is the content.
-
-### Heading 3
-
-Here is the content.
+Nuestra primera salida como pareja.
+![Primera cita](/images/parque-de-la-amistad.jpg)
+![Brithney](/images/brit-parque-amistad.jpg)
