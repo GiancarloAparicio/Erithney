@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "build": "vuepress build docs",
+    "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "serve": "vuepress dev docs",
+    "docs:serve": "vuepress dev docs",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
