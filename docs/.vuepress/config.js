@@ -4,9 +4,8 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-	lang: 'es-es',
 	base: '/Erithney/',
-
+	lang: 'es-es',
 	title: 'Erithney Blog',
 	description: 'My first Site',
 
@@ -14,7 +13,7 @@ export default defineUserConfig({
 		logo: 'https://vuejs.press/images/hero.png',
 
 		navbar: [
-			'/Erithney/',
+			'/',
 			{
 				text: 'Article',
 				link: '/article/',
